@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+<body>
+<canvas id="canvas" width="1000" height="1000"></canvas>
+<script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext ("2d");
+    ctx.strokeStyle = "Turquoise";
+    ctx.lineWidth = 4;
+    ctx.strokeRect (100, 100, 20, 20);
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(110,120);
+    ctx.lineTo(110,180);
+    ctx.moveTo(110,140);
+    ctx.lineTo(80,130);
+    ctx.moveTo(110,140);
+    ctx.lineTo(140,130);
+    ctx.moveTo(110,180);
+    ctx.lineTo(80,200);
+    ctx.moveTo(110,180);
+    ctx.lineTo(140,200);
+    ctx.stroke();
+
+</script>
+</body>
+</html>
